@@ -6,7 +6,4 @@ public class HelloWorld {
 		
         return num1 > num2;
     }
-	public void test() {
-		int i=20;
-	}
 }
