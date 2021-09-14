@@ -25,7 +25,6 @@ pipeline {
         stage('Test'){
             steps{
                 sh 'mvn test'
-                step([$class: 'Publisher', reportFilenamePattern: "${workspace}/target/surefire-reports/testng-results.xml"])
             }
         }
         stage('JaCoCo') {
