@@ -30,7 +30,7 @@ pipeline {
         stage('JaCoCo') {
             steps {
                 echo 'Code Coverage'
-                jacoco()
+                sh 'mvn jacoco:report'
             }
         }
          
