@@ -29,8 +29,8 @@ pipeline {
         }
         stage('JaCoCo') {
             steps {
-                echo 'Code Coverage'
-                sh 'mvn jacoco:reports'
+                echo 'Code Coverage with JaCoCo'
+                sh 'mvn jacoco:report'
             }
         }
          
